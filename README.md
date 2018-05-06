@@ -1,1 +1,2 @@
-# Stepans WebSite Built with Polymer Easily Hosted on most Platforms Currently Hosted on Firebase and AppEngine 
+# Stepans WebSite
+##Built with Polymer Easily Hosted on most Platforms Currently Hosted on Firebase and AppEngine 
