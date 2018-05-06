@@ -9,6 +9,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 -->
 
 <link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../bower_components/paper-card/paper-card.html">
+<link rel="import" href="../bower_components/paper-button/paper-button.html">
 <link rel="import" href="shared-styles.html">
 
 <dom-module id="my-view1">
@@ -19,7 +21,23 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
         padding: 10px;
       }
+
+
     </style>
+
+
+
+
+
+    <div class="card">
+      <div class="circle">3</div>
+      <h1>Android TimeZone List</h1>
+      <p>Here is a github gist I forked, took to long to find should have been documented somewhere better since Android handel time differently than Java</p>
+      <a href="https://gist.github.com/skryshtafovych/5e3b2675b0f68288e7ae83fd1d16df2b">
+<paper-button toggles raised class="custom green">gist</paper-button>  </a>
+    </div>
+
+
 
     <div class="card">
       <div class="circle">2</div>
@@ -34,14 +52,16 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 </ol>
 
-        <a name="link_medium" href="https://medium.com/@skryshtafovych/android-transparency-hex-a57ad1e547ee">Medium Post</a>
+        <a name="link_medium" href="https://medium.com/@skryshtafovych/android-transparency-hex-a57ad1e547ee">    <paper-button raised class="green" >Medium Post</paper-button>
+</a>
 
     </div>
     <div class="card">
       <div class="circle">1</div>
       <h1>Multiple Firebase Apps in One Project Android</h1>
       <p>For easy testing and seperation of data between your test accounts and production.</p>
-        <a name="view1" href="[[rootPath]]view2">Test Link TO Work Tab</a>
+        <a name="view1" href="[[rootPath]]view2"> <paper-button raised class="green" >Test Link TO Work Tab</paper-button>
+</a>
     <p>Google makes this very easy if you follow their guide or this one all you need is to Create Multiple apps within one Firebase Project this way you can name you projects similar you.project.name & you.project.name.debug following this pattern and modifying you Gradel build file for release and debug config will allow you to quickly switch between testing you analytic changes and configuring new Firebase values</p>
     </div>
   </template>
@@ -49,6 +69,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <script>
     class MyView1 extends Polymer.Element {
       static get is() { return 'my-view1'; }
+
+
     }
 
     window.customElements.define(MyView1.is, MyView1);
