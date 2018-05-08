@@ -9,7 +9,11 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 -->
 
 <link rel="import" href="../bower_components/polymer/polymer-element.html">
-<link rel="import" href="shared-styles.html">
+<link rel="import" href="shared-styles.html">\
+<link rel="import" href="../bower_components/paper-card/paper-card.html">
+<link rel="import" href="../bower_components/paper-button/paper-button.html">
+<link rel="import" href="../bower_components/paper-item/paper-item.html">
+
 
 <dom-module id="my-view3">
   <template>
@@ -21,12 +25,20 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       }
     </style>
 
+
+
     <div class="card">
       <div class="circle">3</div>
-      <h1>View Three</h1>
-      <p>Modus commodo minimum eum te, vero utinam assueverit per eu.</p>
-      <p>Ea duis bonorum nec, falli paulo aliquid ei eum.Has at minim mucius aliquam, est id tempor laoreet.Pro saepe pertinax ei, ad pri animal labores suscipiantur.</p>
+      <h1>Stuff I wanna Try Android Libs</h1>
+      <p>Dagger Android/Java dependency injector for Fragment and Activities. Wonder how this is different than archetectural components.</p>
+      <a href="https://google.github.io/dagger/">
+<paper-button toggles raised class="custom green">Dagger</paper-button>  </a>
+
+<p>Architectural component guide by Googlers.<p/>
+<a href="https://developer.android.com/topic/libraries/architecture/">
+<paper-button toggles raised class="custom green">Room/Observabels/LifeCycles</paper-button>  </a>
     </div>
+
   </template>
 
   <script>

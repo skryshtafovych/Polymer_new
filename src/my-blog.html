@@ -11,6 +11,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <link rel="import" href="../bower_components/polymer/polymer-element.html">
 <link rel="import" href="../bower_components/paper-card/paper-card.html">
 <link rel="import" href="../bower_components/paper-button/paper-button.html">
+<link rel="import" href="../bower_components/paper-item/paper-item.html">
+
+<link rel="import" href="../bower_components/iron-icons/maps-icons.html">
+
 <link rel="import" href="shared-styles.html">
 
 <dom-module id="my-view1">
@@ -26,6 +30,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     </style>
 
 
+    <div class="card">
+      <div class="circle">4</div>
+      <h1>New Section and Ideas done </h1>
+      <a href="[[rootPath]]stuff">
+<paper-button toggles raised class="custom green">Stuff Section</paper-button>  </a>
+    </div>
 
 
 
@@ -44,6 +54,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       <h1>Android Colors</h1>
       <p>Android uses hexadecimal ARGB values, which are formatted as #AARRGGBB. The AA, represent the alpha channel. During UI design sometimes you want to add alpha channel(Opacity) to your colors. Instead of doing Math here is quick list for you referencing needs.If you want to do the math:
 <hr>
+
+
+
+
 
 <ol class="list_hexConversion">
   <li>Take your opacity as a decimal value and multiply it by 255. So, if you have a block that is 50% opaque the decimal value would be .5. For example: .5 x 255 = 127.5</li>
