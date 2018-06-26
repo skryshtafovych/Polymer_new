@@ -25,6 +25,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <link rel="lazy-import" href="my-blog.html">
 <link rel="lazy-import" href="my-view2.html">
 <link rel="lazy-import" href="my-stuff.html">
+<link rel="lazy-import" href="my-dashboard.html">
+
 <link rel="lazy-import" href="my-view404.html">
 
 <dom-module id="my-app">
@@ -88,7 +90,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           <a name="view1" href="[[rootPath]]blog">Blog</a>
           <a name="view2" href="[[rootPath]]view2">Work</a>
           <a name="view3" href="[[rootPath]]stuff">Stuff</a>
+          <a name="view4" href="[[rootPath]]dashboard">Dashboard</a>
+
         </iron-selector>
+
       </app-drawer>
 
       <!-- Main content -->
@@ -109,6 +114,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           <my-view1 name="blog"></my-view1>
           <my-view2 name="view2"></my-view2>
           <my-view3 name="stuff"></my-view3>
+          <my-view4 name="dashboard"></my-view4>
+
           <my-view404 name="view404"></my-view404>
         </iron-pages>
       </app-header-layout>
