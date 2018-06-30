@@ -9,6 +9,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 -->
 
 <link rel="import" href="../bower_components/iron-collapse/iron-collapse.html">
+<link rel="import" href="../bower_components/paper-button/paper-button.html">
 
 <dom-module id="simple-expand-collapse">
 
@@ -40,7 +41,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         @apply --shadow-elevation-2dp;
       }
     </style>
-    <button id="trigger" on-click="toggle" aria-expanded$="[[opened]]" aria-controls="collapse">[[_getText(opened)]]</button>
+
+    <paper-button toggles raised class="custom green" id="trigger" on-click="toggle" aria-expanded$="[[opened]]" aria-controls="collapse">[[_getText(opened)]]</paper-button>
     <iron-collapse id="collapse" opened="{{opened}}" horizontal="[[horizontal]]" no-animation="[[noAnimation]]" tabindex="0">
       <slot></slot>
     </iron-collapse>
@@ -61,7 +63,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       this.$.collapse.toggle();
     },
     _getText: function(opened) {
-      return opened ? 'Collapse' : 'Expand';
+      return opened ? 'Collapse' : 'Read More';
     }
   });
 </script>
