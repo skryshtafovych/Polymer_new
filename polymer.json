@@ -17,7 +17,7 @@
     "manifest.json"
   ],
   "lint": {
-    "rules": ["polymer-2"]
+    "rules": ["polymer-3"]
   },
   "builds": [
     {

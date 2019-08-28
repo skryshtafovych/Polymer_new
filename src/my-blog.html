@@ -34,6 +34,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
     </style>
 
+    <div id="currenturlInUSE" ></div>
 
 
         <div class="card">
@@ -176,12 +177,60 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   </template>
 
   <script>
+
+    window.onload = function() {
+      console.log("Test COnsole  ");
+      getURLS();
+      //getUSERS();
+    };
+
+
+            function setURLS(urls){
+
+              document.getElementById("currenturlInUSE").innerHTML=urls
+            }
+
+
+            function getURLS() {
+              console.log("Sup Dopie what do you see");
+
+                fetch('https://github.com/skryshtafovych/fileDownload/edit/master/mysite_Blog.json', {
+                    method: 'get',
+                    headers: new Headers({'content-type': 'application/json'})
+                }).then((res) => res.json())
+                    .then((data) => setURLS(JSON.stringify(data)))
+                    .catch((err) => console.log(err))
+            }
+
+
+
+
     class MyView1 extends Polymer.Element {
+
+
       static get is() { return 'my-view1'; }
 
 
     }
 
     window.customElements.define(MyView1.is, MyView1);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   </script>
 </dom-module>
